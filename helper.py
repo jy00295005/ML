@@ -1,6 +1,11 @@
 # This Python file uses the following encoding: utf-8
 import MySQLdb
 import numpy as np
+from matplotlib.gridspec import GridSpec
+from math import ceil, sqrt
+import matplotlib.pyplot as plt
+
+
 
 conn = MySQLdb.connect(host='localhost', user='root', passwd='ct123690')
 
@@ -9,6 +14,22 @@ def my_query(q, connection=conn):
 	cursor = connection.cursor()
 	cursor.execute(q)
 	return cursor.fetchall()
+
+#去掉NSF最后一段
+def clean_data(data):
+	clean_document_data = []
+	for i, doc in enumerate(data):
+		doc_list = doc.split("||")
+		if "<br/><br/>" in doc_list[1]:
+			br_data = doc_list[1].split("<br/><br/>")
+			br_data.pop()
+			join_br_data = ' '.join(br_data)
+			clean_document_data.insert(i, " || ".join([doc_list[0], join_br_data]))
+			# print br_data.pop()
+		else:
+			clean_document_data.insert(i, doc)
+
+	return clean_document_data
 
 def parse_mysql_data(mysql_data, fields_index):
 	document_data_ = []
@@ -41,6 +62,36 @@ def counts_between_groups(number_k, clustering_results):
 
 		group_count_.insert(i, (FP, (count_x_cluster - FP))) 
 	return group_count_
+
+def plot_pie(count_result):
+	labels = 'FP','NSF'
+	explode=(0, 0.05)
+	dimension = int(ceil(sqrt(len(count_result))))
+	print dimension
+
+	conb = [(x, y) for x in xrange(0,dimension) for y in xrange(0,dimension)]
+	the_grid = GridSpec(dimension, dimension)
+
+
+	print count_result[0][0]
+	for i, (x, y) in enumerate(conb):
+	    if i < 20:
+	        print i
+	        fracs = [count_result[i][0], count_result[i][1]]
+	        plt.subplot(the_grid[x, y], aspect=1)
+	        patches, texts, autotexts = plt.pie(fracs, explode=explode,
+	                                        labels=labels, autopct='%.0f%%',
+	                                        shadow=False)
+	        numbers_projects = count_result[i][0]+count_result[i][1]
+	        title = "%s|%s" %(i, numbers_projects)
+	        # title = "c%s" %(i)
+	        # print title
+	        plt.title(title)
+	        autotexts[0].set_color('y')
+
+
+
+	plt.show()
 
 
 def insert_results_into_mysql(data, tabel_name, connection=conn):

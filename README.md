@@ -16,4 +16,3 @@ ML
 	
 	## 将聚类结果写入数据库，需要时打开
 	# insert_results_into_mysql(doc_label_list, insert_table_name)
-	
