@@ -87,5 +87,5 @@ group_count = counts_between_groups(num_k, doc_label_list)
 print group_count
 
 ## 将聚类结果写入数据库
-insert_results_into_mysql(doc_label_list, insert_table_name)
+# insert_results_into_mysql(doc_label_list, insert_table_name)
 
