@@ -38,7 +38,6 @@ def kmean_silhouette_score_curve(max_k=10, step_k=10, X=None):
 	ax.set_title('number of k curve')
 	plt.show()
 
-# conn = MySQLdb.connect(host='localhost', user='root', passwd='ct123690')
 # doc_q = "SELECT * FROM clustering.nuclear_physics_full_table_new " \
 # 		"WHERE (" \
 # 		"(" \
@@ -48,28 +47,36 @@ def kmean_silhouette_score_curve(max_k=10, step_k=10, X=None):
 # 		") AND (StartYear = 2011 or StartYear = 2012 or StartYear = 2013 or StartYear = 2010 or StartYear = 2009)" \
 # 		"GROUP BY Title"
 
-doc_q = "SELECT * FROM clustering.nuclear_physics_full_table_new " \
-		"WHERE " \
-		"(" \
-		"title like '%Large Hadron Collider%' " \
-		"or title like 'LHC' " \
-		"or abstract like '%Large Hadron Collider%' " \
-		"or abstract like 'LHC'" \
-		") " \
-		"and " \
-		"(" \
-		"(" \
-		"PSShortName_Group = 'NSF' " \
-		"and not (title like '%conference%' or title like '%workshop%' or title like '%host%' or title like '%REU Site%') " \
-		"or (PSShortName_Group = 'FP' AND PBTC NOT LIKE '%Social Aspects%' )" \
-		") " \
-		"AND (StartYear = 2011 or StartYear = 2012 or StartYear = 2013 or StartYear = 2010 or StartYear = 2009)" \
-		")" \
-		"GROUP BY Title"
+# doc_q = "SELECT * FROM clustering.nuclear_physics_full_table_new " \
+# 		"WHERE " \
+# 		"(" \
+# 		"title like '%Large Hadron Collider%' " \
+# 		"or title like 'LHC' " \
+# 		"or abstract like '%Large Hadron Collider%' " \
+# 		"or abstract like 'LHC'" \
+# 		") " \
+# 		"and " \
+# 		"(" \
+# 		"(" \
+# 		"PSShortName_Group = 'NSF' " \
+# 		"and not (title like '%conference%' or title like '%workshop%' or title like '%host%' or title like '%REU Site%') " \
+# 		"or (PSShortName_Group = 'FP' AND PBTC NOT LIKE '%Social Aspects%' )" \
+# 		") " \
+# 		"AND (StartYear = 2011 or StartYear = 2012 or StartYear = 2013 or StartYear = 2010 or StartYear = 2009)" \
+# 		")" \
+# 		"GROUP BY Title"
+doc_q = "SELECT * FROM clustering.particle where not ( title like '%conference%' or title like '%workshop%' or title like '%host%' or title like '%REU Site%')"
 
 
 doc_rows = my_query(doc_q)
-document_data, document_ref_code, document_pbid, document_group = parse_mysql_data(doc_rows, data_fields)
+document_data = []
+
+# document_data, document_ref_code, document_pbid, document_group = parse_mysql_data(doc_rows, data_fields)
+for i, row in enumerate(doc_rows):
+	# document_data.insert(i, (row[2] + ' ' + row[3]).decode('latin-1')) # + row[3]
+	document_data.insert(i, (row[1] + ' ' + row[2]).decode('latin-1')) # + row[3]
+
+document_data = clean_test_data(document_data)
 
 
 # print len(document_data)
@@ -77,7 +84,7 @@ document_data, document_ref_code, document_pbid, document_group = parse_mysql_da
 print "data list created"
 vectorizer = CountVectorizer(
 	max_df=0.9,
-	# min_df=2,
+	min_df=5,
 	# ngram_range=(2, 2),
 	# vocabulary=myVoca,
 	# max_features=10000,
@@ -87,6 +94,9 @@ vectorizer = CountVectorizer(
 transformer = TfidfTransformer()
 X_counts = vectorizer.fit_transform(document_data)
 X_tfidf = transformer.fit_transform(X_counts)
+
+print len(vectorizer.get_feature_names())
+
 
 print "X_tfidf vectorizer created"
 

@@ -31,11 +31,27 @@ def clean_data(data):
 
 	return clean_document_data
 
-def parse_mysql_data(mysql_data, fields_index):
+#去掉NSF最后一段
+def clean_test_data(data):
+	clean_document_data = []
+	for i, doc in enumerate(data):
+		if "<br/><br/>" in doc:
+			br_data = doc.split("<br/><br/>")
+			br_data.pop()
+			join_br_data = ' '.join(br_data)
+			clean_document_data.insert(i,join_br_data)
+		else:
+			clean_document_data.insert(i, doc)
+
+	return clean_document_data
+
+def parse_mysql_data(mysql_data, fields_index, validation=False):
+	
 	document_data_ = []
 	document_ref_code_ = []
 	document_pbid_ = []
 	document_group_ = []
+	document_label_ = []
 
 	for i, row in enumerate(mysql_data):
 		if row[19] == 'NULL':
@@ -45,7 +61,14 @@ def parse_mysql_data(mysql_data, fields_index):
 		document_ref_code_.insert(i, row[fields_index['ref_code']])
 		document_pbid_.insert(i, row[fields_index['pbid']])
 		document_group_.insert(i, row[fields_index['group']])
-	return (document_data_,document_ref_code_,document_pbid_,document_group_)
+		if validation:
+			document_label_.insert(i, row[fields_index['label']])
+
+	if validation:
+		return (document_data_,document_ref_code_,document_pbid_,document_group_,document_label_)
+	else:
+		return (document_data_,document_ref_code_,document_pbid_,document_group_)
+	
 	
 
 def counts_between_groups(number_k, clustering_results):
@@ -75,7 +98,7 @@ def plot_pie(count_result):
 
 	print count_result[0][0]
 	for i, (x, y) in enumerate(conb):
-	    if i < 20:
+	    if i < len(count_result):
 	        print i
 	        fracs = [count_result[i][0], count_result[i][1]]
 	        plt.subplot(the_grid[x, y], aspect=1)
@@ -127,7 +150,7 @@ def insert_results_into_mysql(data, tabel_name, connection=conn):
 
 
 def get_stop_words():
-	stop_words = [
+	stop_words = frozenset([
 		'all', 'six', 'less', 'being', 'indeed', 'over', 'move', 'anyway', 'four', 'not', 'own', 'through', 'yourselves', 'fify', 'where', 'mill', 'only',
 		'find', 'before', 'one', 'whose', 'system', 'how', 'somewhere', 'with', 'thick', 'show', 'had', 'enough', 'should', 'to', 'must', 'whom', 'seeming', 
 		'under', 'ours', 'has', 'might', 'thereafter', 'latterly', 'do', 'them', 'his', 'around', 'than', 'get', 'very', 'de', 'none', 'cannot', 'every', 
@@ -171,5 +194,5 @@ def get_stop_words():
 		'70', '700', '72', '73', '75', '750', '76', '7623', '76ge', '78', '7be', '7th', '7x10', '80', '800', '807', '81', '810', '82', 
 		'8217', '8220', '8221', '8226', '8232', '83', '8364', '85', '86', '8722', '886', '90', '900', '930', '948', '95', '957', '96', 
 		'98', '99', 'a2', 'aaas', 'aas', 'ab', 'ab2o4'
-	]
+	])
 	return stop_words

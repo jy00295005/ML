@@ -38,23 +38,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="silhouette_score_curve.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/silhouette_score_curve.py">
+      <file leaf-file-name="nuclear_physics_nsf_fp_fulltable.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nuclear_physics_nsf_fp_fulltable.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="86" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.5798005" vertical-offset="0" max-vertical-offset="1500">
+            <state line="18" column="24" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0" vertical-offset="113" max-vertical-offset="1485">
               <folding>
-                <element signature="e#54#68#0" expanded="true" />
-                <marker date="1403570894000" expanded="true" signature="1917:1972" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-                <marker date="1403570894000" expanded="true" signature="1917:2152" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-                <marker date="1403570894000" expanded="true" signature="1917:2163" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-                <marker date="1403570894000" expanded="true" signature="1917:2172" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-                <marker date="1403570894000" expanded="true" signature="1917:2180" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-                <marker date="1403570894000" expanded="true" signature="1917:2212" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-                <marker date="1403570894000" expanded="true" signature="1917:2407" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-                <marker date="1403570894000" expanded="true" signature="1917:2415" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-                <marker date="1403570894000" expanded="true" signature="1917:2525" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-                <marker date="1403570894000" expanded="true" signature="1917:2533" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-                <marker date="1403570894000" expanded="true" signature="1917:2554" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
+                <marker date="1403679353000" expanded="true" signature="340:814" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="grid_search_term_words.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grid_search_term_words.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="0" selection-start="918" selection-end="918" vertical-scroll-proportion="0.20705521" vertical-offset="150" max-vertical-offset="945">
+              <folding>
+                <marker date="1403770035000" expanded="true" signature="487:657" placeholder="SELECT * FRO..particle..." />
+                <marker date="1403770035000" expanded="true" signature="668:922" placeholder="SELECT * FRO..particle..." />
+                <marker date="1403770035000" expanded="true" signature="1005:1116" placeholder="SELECT keywo..particle_keywords..." />
+                <marker date="1403770035000" expanded="true" signature="1757:1918" placeholder="SELECT keywo..particle_keywords..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_vect.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_vect.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1245">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="text.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///Library/Python/2.7/site-packages/sklearn/feature_extraction/text.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="85" column="26" selection-start="2510" selection-end="2510" vertical-scroll-proportion="-10.5" vertical-offset="732" max-vertical-offset="18390">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stop_words.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///Library/Python/2.7/site-packages/sklearn/feature_extraction/stop_words.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="31" selection-start="212" selection-end="222" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helper.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/helper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="196" column="6" selection-start="10148" selection-end="10148" vertical-scroll-proportion="0.0" vertical-offset="2183" max-vertical-offset="2985">
+              <folding>
+                <marker date="1403745910000" expanded="true" signature="3628:3747" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -84,16 +125,19 @@
         <option value="$PROJECT_DIR$/praticle_clustering.py" />
         <option value="$PROJECT_DIR$/nuclear_physics.py" />
         <option value="$PROJECT_DIR$/nuclear_physics_nsf_fp.py" />
-        <option value="$PROJECT_DIR$/nuclear_physics_nsf_fp_fulltable.py" />
         <option value="$PROJECT_DIR$/plotlines.py" />
         <option value="$PROJECT_DIR$/silhouette_score_curve.py" />
+        <option value="$PROJECT_DIR$/helper.py" />
+        <option value="$PROJECT_DIR$/nuclear_physics_nsf_fp_fulltable.py" />
+        <option value="$PROJECT_DIR$/test_scripts/test.py" />
+        <option value="$PROJECT_DIR$/grid_search_term_words.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1920" />
-    <option name="height" value="1028" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -137,6 +181,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test_scripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -476,8 +534,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1028" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1920" height="878" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32307693" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -489,7 +547,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3994465" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.113247864" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13486005" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -690,13 +748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_scripts/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="18" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.26553673" vertical-offset="93" max-vertical-offset="1155">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_scripts/clustering.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="136" column="39" selection-start="4736" selection-end="4736" vertical-scroll-proportion="1.7167798" vertical-offset="0" max-vertical-offset="2025" />
@@ -738,13 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nuclear_physics_nsf_fp_fulltable.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="29" selection-start="923" selection-end="923" vertical-scroll-proportion="0.39473686" vertical-offset="0" max-vertical-offset="1140">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plot_pie.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="17" selection-start="55" selection-end="87" vertical-scroll-proportion="0.038709678" vertical-offset="0" max-vertical-offset="775">
@@ -765,27 +809,77 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="0" selection-start="1217" selection-end="1217" vertical-scroll-proportion="0.6359102" vertical-offset="0" max-vertical-offset="885">
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/silhouette_score_curve.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="86" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.5798005" vertical-offset="0" max-vertical-offset="1500">
+        <state line="31" column="86" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.3553616" vertical-offset="75" max-vertical-offset="1395">
           <folding>
-            <element signature="e#54#68#0" expanded="true" />
-            <marker date="1403570894000" expanded="true" signature="1917:1972" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-            <marker date="1403570894000" expanded="true" signature="1917:2152" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-            <marker date="1403570894000" expanded="true" signature="1917:2163" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-            <marker date="1403570894000" expanded="true" signature="1917:2172" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-            <marker date="1403570894000" expanded="true" signature="1917:2180" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-            <marker date="1403570894000" expanded="true" signature="1917:2212" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-            <marker date="1403570894000" expanded="true" signature="1917:2407" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-            <marker date="1403570894000" expanded="true" signature="1917:2415" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-            <marker date="1403570894000" expanded="true" signature="1917:2525" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-            <marker date="1403570894000" expanded="true" signature="1917:2533" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-            <marker date="1403570894000" expanded="true" signature="1917:2554" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
+            <marker date="1403769944000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
+            <marker date="1403769944000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
+            <marker date="1403769944000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
+            <marker date="1403769944000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
+            <marker date="1403769944000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
+            <marker date="1403769944000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
+            <marker date="1403769944000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
+            <marker date="1403769944000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
+            <marker date="1403769944000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
+            <marker date="1403769944000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
+            <marker date="1403769944000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/sklearn/feature_extraction/stop_words.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="31" selection-start="212" selection-end="222" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="196" column="6" selection-start="10148" selection-end="10148" vertical-scroll-proportion="0.0" vertical-offset="2183" max-vertical-offset="2985">
+          <folding>
+            <marker date="1403745910000" expanded="true" signature="3628:3747" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/sklearn/feature_extraction/text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="26" selection-start="2510" selection-end="2510" vertical-scroll-proportion="-10.5" vertical-offset="732" max-vertical-offset="18390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_vect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="652">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nuclear_physics_nsf_fp_fulltable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="24" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0" vertical-offset="113" max-vertical-offset="1485">
+          <folding>
+            <marker date="1403679353000" expanded="true" signature="340:814" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grid_search_term_words.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="918" selection-end="918" vertical-scroll-proportion="0.20705521" vertical-offset="150" max-vertical-offset="945">
+          <folding>
+            <marker date="1403770035000" expanded="true" signature="487:657" placeholder="SELECT * FRO..particle..." />
+            <marker date="1403770035000" expanded="true" signature="668:922" placeholder="SELECT * FRO..particle..." />
+            <marker date="1403770035000" expanded="true" signature="1005:1116" placeholder="SELECT keywo..particle_keywords..." />
+            <marker date="1403770035000" expanded="true" signature="1757:1918" placeholder="SELECT keywo..particle_keywords..." />
           </folding>
         </state>
       </provider>
