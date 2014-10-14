@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from helper import *
 
-max_number_k = 50
+max_number_k = 20
 step_k = max_number_k
 stop_words = get_stop_words()
 data_fields = {"title":17, "abstract":19, "ref_code":2, "pbid":1, "group":3}
@@ -21,7 +21,7 @@ def kmean_silhouette_score_curve(max_k=10, step_k=10, X=None):
 
 	for i, x in enumerate(number_k):
 		print "start compute %s k" % x
-		km_curve = KMeans(n_clusters=x, init='k-means++', max_iter=100, n_init=1, verbose=False, random_state=RandomState(42))
+		km_curve = KMeans(n_clusters=x, init='k-means++', max_iter=500, n_init=200)
 		km_curve.fit(X)
 		silhouette = metrics.silhouette_score(X_tfidf, km_curve.labels_, metric='euclidean')
 		silhouette_score[i] = silhouette
@@ -65,26 +65,30 @@ def kmean_silhouette_score_curve(max_k=10, step_k=10, X=None):
 # 		"AND (StartYear = 2011 or StartYear = 2012 or StartYear = 2013 or StartYear = 2010 or StartYear = 2009)" \
 # 		")" \
 # 		"GROUP BY Title"
-doc_q = "SELECT * FROM clustering.particle where not ( title like '%conference%' or title like '%workshop%' or title like '%host%' or title like '%REU Site%')"
+# doc_q = "SELECT * FROM clustering.particle where not ( title like '%conference%' or title like '%workshop%' or title like '%host%' or title like '%REU Site%')"
 
+# doc_q = "SELECT * FROM clustering.truth"
+# doc_q = "SELECT * FROM clustering.truth"
+doc_q = "SELECT * FROM clustering.lhc_data";
 
+# data_fields = {"title": 2, "abstract": 3, "ref_code": 1, "pbid": 0, "group": 4}
 doc_rows = my_query(doc_q)
 document_data = []
 
 # document_data, document_ref_code, document_pbid, document_group = parse_mysql_data(doc_rows, data_fields)
 for i, row in enumerate(doc_rows):
-	# document_data.insert(i, (row[2] + ' ' + row[3]).decode('latin-1')) # + row[3]
-	document_data.insert(i, (row[1] + ' ' + row[2]).decode('latin-1')) # + row[3]
+	document_data.insert(i, (row[2] + ' ' + row[7]).decode('latin-1')) # + row[3]
+	# document_data.insert(i, (row[3] + ' ' + row[6]).decode('latin-1')) # + row[3]
 
 document_data = clean_test_data(document_data)
 
 
 # print len(document_data)
-# print document_data[0]
+print document_data[0]
 print "data list created"
 vectorizer = CountVectorizer(
 	max_df=0.9,
-	min_df=5,
+	min_df=2,
 	# ngram_range=(2, 2),
 	# vocabulary=myVoca,
 	# max_features=10000,

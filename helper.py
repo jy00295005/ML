@@ -54,10 +54,10 @@ def parse_mysql_data(mysql_data, fields_index, validation=False):
 	document_label_ = []
 
 	for i, row in enumerate(mysql_data):
-		if row[19] == 'NULL':
-			document_data_.insert(i, row[fields_index['title']].decode('latin-1'))
-		else:
-			document_data_.insert(i, (row[fields_index['title']] + ' || ' + row[fields_index['abstract']]).decode('latin-1'))
+		# if row[19] in row and row[19] == 'NULL':
+		# 	document_data_.insert(i, row[fields_index['title']].decode('latin-1'))
+		# else:
+		document_data_.insert(i, (row[fields_index['title']] + ' || ' + row[fields_index['abstract']]).decode('latin-1'))
 		document_ref_code_.insert(i, row[fields_index['ref_code']])
 		document_pbid_.insert(i, row[fields_index['pbid']])
 		document_group_.insert(i, row[fields_index['group']])
@@ -107,8 +107,6 @@ def plot_pie(count_result):
 	                                        shadow=False)
 	        numbers_projects = count_result[i][0]+count_result[i][1]
 	        title = "%s|%s" %(i, numbers_projects)
-	        # title = "c%s" %(i)
-	        # print title
 	        plt.title(title)
 	        autotexts[0].set_color('y')
 
@@ -147,7 +145,29 @@ def insert_results_into_mysql(data, tabel_name, connection=conn):
 	# 关闭数据库连接
 	connection.close()
 	return return_list
+def kmean_silhouette_score_curve(max_k=10, step_k=10, X=None):
+	number_k = np.linspace(2, max_k, step_k).astype(int)
+	silhouette_score = np.zeros(number_k.shape)
+	# print number_k
 
+	for i, x in enumerate(number_k):
+		print "start compute %s k" % x
+		km_curve = KMeans(n_clusters=x, init='k-means++', max_iter=500, n_init=200)
+		km_curve.fit(X)
+		silhouette = metrics.silhouette_score(X_tfidf, km_curve.labels_, metric='euclidean')
+		silhouette_score[i] = silhouette
+
+	print "loop throgh all number of k, then plot fig"
+
+	fig, ax = plt.subplots()
+	ax.plot(number_k, silhouette_score, lw=2, label='silhouette_score vs number of k')
+	ax.set_xlabel('number of k')
+	ax.set_ylabel('silhouette_score')
+
+	ax.legend(loc=0)
+	ax.set_xlim(0, max_k)
+	ax.set_title('number of k curve')
+	plt.show()
 
 def get_stop_words():
 	stop_words = frozenset([
@@ -170,7 +190,7 @@ def get_stop_words():
 		'perhaps', 'latter', 'meanwhile', 'when', 'detail', 'same', 'wherein', 'beside', 'also', 'that', 'other', 'take', 'which', 'becomes', 'yo', 'if', 
 		'nobody', 'see', 'though', 'may', 'after', 'upon', 'most', 'hereupon', 'eight', 'but', 'serious', 'nothing', 'such', 'why', 'a', 'off', 'whereby', 
 		'third', 'i', 'whole', 'noone', 'sometimes', 'well', 'amoungst', 'yours', 'their', 'rather', 'without', 'so', 'five', 'the', 'first', 'whereas', 'once'
-		'LHC' , 'collider' ,'facility' ,'group'
+		'LHC' , 'collider' ,'facility' ,'group','Hadron','ATLAS','CMS','Large','particle','particles'
 		'able', 'absolute', 'absolutely', 'academic', 'academics', 'academy', 'achievement', 'achievements', 'actively', 'activities', 'activity',
 		'actual', 'actually', 'addressed', 'addresses', 'adept', 'advice', 'advise', 'advised', 'adviser', 'advising', 'advisor', 'april',
 		'began', 'begin', 'beginning', 'begins', 'begun', 'student', 'students', 'studied', 'studies', 'study', 'studying',

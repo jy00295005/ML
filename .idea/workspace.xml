@@ -41,25 +41,25 @@
       <file leaf-file-name="nuclear_physics_nsf_fp_fulltable.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nuclear_physics_nsf_fp_fulltable.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="24" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0" vertical-offset="113" max-vertical-offset="1485">
-              <folding>
-                <marker date="1403679353000" expanded="true" signature="340:814" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-              </folding>
+            <state line="18" column="24" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1740">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="grid_search_term_words.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="grid_search_term_words.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grid_search_term_words.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="918" selection-end="918" vertical-scroll-proportion="0.20705521" vertical-offset="150" max-vertical-offset="945">
-              <folding>
-                <marker date="1403770035000" expanded="true" signature="487:657" placeholder="SELECT * FRO..particle..." />
-                <marker date="1403770035000" expanded="true" signature="668:922" placeholder="SELECT * FRO..particle..." />
-                <marker date="1403770035000" expanded="true" signature="1005:1116" placeholder="SELECT keywo..particle_keywords..." />
-                <marker date="1403770035000" expanded="true" signature="1757:1918" placeholder="SELECT keywo..particle_keywords..." />
-              </folding>
+            <state line="28" column="0" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1365">
+              <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="" pinned="false" current="true" current-in-tab="true">
+        <entry file="http://">
+          <provider selected="true" editor-type-id="httpFileEditor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -75,7 +75,7 @@
       <file leaf-file-name="text.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file:///Library/Python/2.7/site-packages/sklearn/feature_extraction/text.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="26" selection-start="2510" selection-end="2510" vertical-scroll-proportion="-10.5" vertical-offset="732" max-vertical-offset="18390">
+            <state line="85" column="26" selection-start="2510" selection-end="2510" vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="18660">
               <folding />
             </state>
           </provider>
@@ -84,7 +84,7 @@
       <file leaf-file-name="stop_words.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file:///Library/Python/2.7/site-packages/sklearn/feature_extraction/stop_words.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="31" selection-start="212" selection-end="222" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+            <state line="3" column="31" selection-start="212" selection-end="222" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="765">
               <folding />
             </state>
           </provider>
@@ -93,10 +93,8 @@
       <file leaf-file-name="helper.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="196" column="6" selection-start="10148" selection-end="10148" vertical-scroll-proportion="0.0" vertical-offset="2183" max-vertical-offset="2985">
-              <folding>
-                <marker date="1403745910000" expanded="true" signature="3628:3747" placeholder="INSERT INTO ..." />
-              </folding>
+            <state line="196" column="6" selection-start="8511" selection-end="8511" vertical-scroll-proportion="0.0" vertical-offset="2940" max-vertical-offset="3345">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -165,7 +163,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -200,6 +197,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -219,6 +217,9 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="OPEN_URL_DIALOG">
+      <recent name="http://" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test_scripts" />
       <recent name="$PROJECT_DIR$" />
@@ -404,6 +405,9 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -425,9 +429,6 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -534,27 +535,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="878" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="878" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32307693" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11460259" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14643237" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14802982" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3994465" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13486005" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13473424" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -576,6 +577,48 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/nuclear_physics_nsf_fp_fulltable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="24" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1740">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grid_search_term_words.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_vect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/sklearn/feature_extraction/text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="26" selection-start="2510" selection-end="2510" vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="18660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/sklearn/feature_extraction/stop_words.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="31" selection-start="212" selection-end="222" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="196" column="6" selection-start="8511" selection-end="8511" vertical-scroll-proportion="0.0" vertical-offset="2940" max-vertical-offset="3345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test_scripts/inprove_TfidfVectorizer_clustering.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="225" />
@@ -584,11 +627,6 @@
     <entry file="file://$PROJECT_DIR$/test_scripts/clustering_vaildation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="37" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1425" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_scripts/text_cluster_test">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="19" selection-start="2009" selection-end="2009" vertical-scroll-proportion="0.0" vertical-offset="343" max-vertical-offset="1095" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_scripts/offical_clustering_text.py">
@@ -609,11 +647,6 @@
     <entry file="file://$PROJECT_DIR$/test_scripts/clustering_vaildation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="37" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1425" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_scripts/text_cluster_test">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="19" selection-start="2009" selection-end="2009" vertical-scroll-proportion="0.0" vertical-offset="343" max-vertical-offset="1095" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_scripts/offical_clustering_text.py">
@@ -671,19 +704,9 @@
         <state line="128" column="62" selection-start="4490" selection-end="4490" vertical-scroll-proportion="0.0" vertical-offset="1920" max-vertical-offset="2295" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_scripts/text_cluster_test">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_scripts/clustering.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="41" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1455" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_scripts/text_cluster_test">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="59" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="315" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_scripts/offical_clustering_text.py">
@@ -743,21 +766,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_scripts/three_topic_clustering.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="21" selection-start="1683" selection-end="1692" vertical-scroll-proportion="0.16666667" vertical-offset="498" max-vertical-offset="1560">
-          <folding />
-        </state>
+        <state line="52" column="21" selection-start="1683" selection-end="1692" vertical-scroll-proportion="0.16666667" vertical-offset="498" max-vertical-offset="1560" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_scripts/clustering.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="136" column="39" selection-start="4736" selection-end="4736" vertical-scroll-proportion="1.7167798" vertical-offset="0" max-vertical-offset="2025" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_scripts/text_cluster_test">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="59" selection-start="1909" selection-end="1909" vertical-scroll-proportion="0.58728653" vertical-offset="101" max-vertical-offset="1155">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_scripts/clustering_vaildation.py">
@@ -767,70 +781,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_scripts/praticle_clustering.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="0" selection-start="2516" selection-end="2516" vertical-scroll-proportion="0.29299363" vertical-offset="730" max-vertical-offset="1515">
-          <folding>
-            <marker date="1403057537000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..particle..." />
-          </folding>
-        </state>
+        <state line="74" column="0" selection-start="2516" selection-end="2516" vertical-scroll-proportion="0.29299363" vertical-offset="730" max-vertical-offset="1515" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_scripts/nuclear_physics_nsf_fp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="749" selection-end="749" vertical-scroll-proportion="0.45112783" vertical-offset="45" max-vertical-offset="2370">
-          <folding>
-            <marker date="1403139754000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics..." />
-            <marker date="1403139754000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table..." />
-            <marker date="1403139754000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table..." />
-            <marker date="1403139754000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table..." />
-            <marker date="1403139754000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table..." />
-            <marker date="1403139754000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1403139754000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
+        <state line="27" column="0" selection-start="749" selection-end="749" vertical-scroll-proportion="0.45112783" vertical-offset="45" max-vertical-offset="2370" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plot_pie.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="55" selection-end="87" vertical-scroll-proportion="0.038709678" vertical-offset="0" max-vertical-offset="775">
-          <folding />
-        </state>
+        <state line="2" column="17" selection-start="55" selection-end="87" vertical-scroll-proportion="0.038709678" vertical-offset="0" max-vertical-offset="775" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_scripts/nuclear_physics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="38" selection-start="2600" selection-end="2600" vertical-scroll-proportion="0.43949044" vertical-offset="1035" max-vertical-offset="1980">
-          <folding>
-            <marker date="1403058538000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table..." />
-          </folding>
-        </state>
+        <state line="92" column="38" selection-start="2600" selection-end="2600" vertical-scroll-proportion="0.43949044" vertical-offset="1035" max-vertical-offset="1980" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_scripts/plotlines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="1217" selection-end="1217" vertical-scroll-proportion="0.6359102" vertical-offset="0" max-vertical-offset="885">
-          <folding>
-            <element signature="e#0#14#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="34" column="0" selection-start="1217" selection-end="1217" vertical-scroll-proportion="0.6359102" vertical-offset="0" max-vertical-offset="885" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/silhouette_score_curve.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="86" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.3553616" vertical-offset="75" max-vertical-offset="1395">
-          <folding>
-            <marker date="1403769944000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-            <marker date="1403769944000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-            <marker date="1403769944000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-            <marker date="1403769944000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-            <marker date="1403769944000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-            <marker date="1403769944000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-            <marker date="1403769944000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-            <marker date="1403769944000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-            <marker date="1403769944000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-            <marker date="1403769944000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-            <marker date="1403769944000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-          </folding>
-        </state>
+        <state line="31" column="86" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.3553616" vertical-offset="75" max-vertical-offset="1395" />
       </provider>
     </entry>
     <entry file="file:///Library/Python/2.7/site-packages/sklearn/feature_extraction/stop_words.py">
@@ -842,16 +818,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/helper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="196" column="6" selection-start="10148" selection-end="10148" vertical-scroll-proportion="0.0" vertical-offset="2183" max-vertical-offset="2985">
-          <folding>
-            <marker date="1403745910000" expanded="true" signature="3628:3747" placeholder="INSERT INTO ..." />
-          </folding>
+        <state line="196" column="6" selection-start="8511" selection-end="8511" vertical-scroll-proportion="0.0" vertical-offset="2940" max-vertical-offset="3345">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file:///Library/Python/2.7/site-packages/sklearn/feature_extraction/text.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="26" selection-start="2510" selection-end="2510" vertical-scroll-proportion="-10.5" vertical-offset="732" max-vertical-offset="18390">
+        <state line="85" column="26" selection-start="2510" selection-end="2510" vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="18660">
           <folding />
         </state>
       </provider>
@@ -865,23 +839,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nuclear_physics_nsf_fp_fulltable.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="24" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0" vertical-offset="113" max-vertical-offset="1485">
-          <folding>
-            <marker date="1403679353000" expanded="true" signature="340:814" placeholder="SELECT * FRO..nuclear_physics_full_table_new..." />
-          </folding>
+        <state line="18" column="24" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1740">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grid_search_term_words.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="918" selection-end="918" vertical-scroll-proportion="0.20705521" vertical-offset="150" max-vertical-offset="945">
-          <folding>
-            <marker date="1403770035000" expanded="true" signature="487:657" placeholder="SELECT * FRO..particle..." />
-            <marker date="1403770035000" expanded="true" signature="668:922" placeholder="SELECT * FRO..particle..." />
-            <marker date="1403770035000" expanded="true" signature="1005:1116" placeholder="SELECT keywo..particle_keywords..." />
-            <marker date="1403770035000" expanded="true" signature="1757:1918" placeholder="SELECT keywo..particle_keywords..." />
-          </folding>
+        <state line="28" column="0" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1365">
+          <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="http://">
+      <provider selected="true" editor-type-id="httpFileEditor">
+        <state />
       </provider>
     </entry>
   </component>

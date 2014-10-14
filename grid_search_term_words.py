@@ -20,17 +20,36 @@ stop_words = get_stop_words()
 # 		"title like '%conference%' or title like '%workshop%' or title like '%host%' or title like '%REU Site%'" \
 # 		")"
 
+# doc_q = "SELECT * FROM clustering.nuclear_physics_full_table_new " \
+# 		"WHERE (" \
+# 		"(" \
+# 		"PSShortName_Group = 'NSF' and Sponser = 'Division of Physics' " \
+# 		"and not (title like '%Summer%' or title like '%Support for Young%' or title like '%conference%' or title like '%workshop%' or title like '%host%' or title like '%REU Site%')" \
+# 		") or (PSShortName_Group = 'FP' AND PBTC NOT LIKE '%Social Aspects%' )" \
+# 		") AND (StartYear = 2011 or StartYear = 2012 or StartYear = 2013 or StartYear = 2010 or StartYear = 2009)" \
+# 		"GROUP BY Title"
+
 doc_q = "SELECT * FROM clustering.nuclear_physics_full_table_new " \
-		"WHERE (" \
+		"WHERE " \
 		"(" \
-		"PSShortName_Group = 'NSF' and Sponser = 'Division of Physics' " \
-		"and not (title like '%conference%' or title like '%workshop%' or title like '%host%' or title like '%REU Site%')" \
-		") or (PSShortName_Group = 'FP' AND PBTC NOT LIKE '%Social Aspects%' )" \
-		") AND (StartYear = 2011 or StartYear = 2012 or StartYear = 2013 or StartYear = 2010 or StartYear = 2009)" \
+		"title like '%Large Hadron Collider%' " \
+		"or title like 'LHC' " \
+		"or abstract like '%Large Hadron Collider%' " \
+		"or abstract like 'LHC'" \
+		") " \
+		"and " \
+		"(" \
+		"(" \
+		"PSShortName_Group = 'NSF' " \
+		"and not (title like '%conference%' or title like '%workshop%' or title like '%host%' or title like '%REU Site%') " \
+		"or (PSShortName_Group = 'FP' AND PBTC NOT LIKE '%Social Aspects%' )" \
+		") " \
+		"AND (StartYear = 2011 or StartYear = 2012 or StartYear = 2013 or StartYear = 2010 or StartYear = 2009)" \
+		")" \
 		"GROUP BY Title"
 
-relevcance_range = [float(y)/10 for y in [ .5*x for x in range(0*2, 9*2)]][3:20]
-k_range = np.linspace(2, 50, 50/3).astype(int)
+relevcance_range = [float(y)/10 for y in [ .5*x for x in range(5*2, 8*2)]][3:20]
+k_range = np.linspace(2, 40, 40/3).astype(int)
 grid = [(r,k) for r in relevcance_range for k in k_range]
 print relevcance_range
 print len(grid)
@@ -38,11 +57,11 @@ print len(grid)
 
 # print grid
 result = []
-for index, (r,k) in enumerate(grid[:3]):
+for index, (r,k) in enumerate(grid):
 	print (r,k)
 	# voca_q = "SELECT keyword FROM clustering.particle_keywords " \
 	# 		 "where keyword!='' and relevance > %s group by keyword" %r
-	voca_q = "SELECT keyword FROM clustering.nuclear_physics_full_table_new_kw " \
+	voca_q = "SELECT keyword FROM clustering.lhc_term_words " \
 			 "where keyword!='' and relevance > %s group by keyword" %r
 	voca_rows = my_query(voca_q)
 	doc_rows = my_query(doc_q)
