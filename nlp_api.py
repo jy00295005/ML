@@ -1,14 +1,13 @@
 # This Python file uses the following encoding: utf-8
-import MySQLdb
 from pony.orm import *
 from alchemyapi import AlchemyAPI
 import json
 from helper import *
 
 year = 2012
-start = 18000
-total_count = 20000
-select_number = 20
+start = 95080
+total_count = 101581
+select_number = 20 
 
 db = Database('mysql', host='localhost', user='root', passwd='ct123690', db='clustering')
 # sql_debug(True) 

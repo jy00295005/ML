@@ -92,22 +92,22 @@ km = KMeans(n_clusters=num_k, init='k-means++', max_iter=800, n_init=400)
 X_kmean = km.fit(X_tfidf)
 # print km.labels_
 
-##计算聚类簇中得组成部分，NSF FP
-doc_label_list = [
-	(pbid, refcode, doc, label, group)
-	for pbid, refcode, doc, label, group
-	in zip(document_data, km.labels_, document_ref_code, document_pbid, document_group)
-]
+# ##计算聚类簇中得组成部分，NSF FP
+# doc_label_list = [
+# 	(pbid, refcode, doc, label, group)
+# 	for pbid, refcode, doc, label, group
+# 	in zip(document_data, km.labels_, document_ref_code, document_pbid, document_group)
+# ]
 
-print doc_label_list[1]
-# print len(doc_label_list)
-group_count = counts_between_groups(num_k, doc_label_list)
-print len(group_count)
+# print doc_label_list[1]
+# # print len(doc_label_list)
+# group_count = counts_between_groups(num_k, doc_label_list)
+# print len(group_count)
 
-# 将聚类结果写入数据库
-# insert_results_into_mysql(doc_label_list, insert_table_name)
+# # 将聚类结果写入数据库
+# # insert_results_into_mysql(doc_label_list, insert_table_name)
 
-# print group_count
-# group_count = [(8, 14), (12, 27), (21, 16), (2, 24), (8, 13), (1, 17), (5, 17), (1, 11)]
-# plot pie charts
-plot_pie(group_count)
+# # print group_count
+# # group_count = [(8, 14), (12, 27), (21, 16), (2, 24), (8, 13), (1, 17), (5, 17), (1, 11)]
+# # plot pie charts
+# plot_pie(group_count)

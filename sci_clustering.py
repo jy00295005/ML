@@ -51,7 +51,7 @@ def convert(term_dict):
     # Let Scipy convert COO to CSR format and return
     return csr_matrix(coo)
 
-doc_q = "SELECT * FROM clustering.scimap";
+doc_q = "SELECT * FROM clustering.scimap where c > 20";
 data = my_query(doc_q)
 sparse_m = dict(
 	((a,b),s) for i, (a,b,s) in enumerate(data)
@@ -61,15 +61,20 @@ sparse_m = dict(
 clustering_sparse  =  convert(sparse_m)
 
 
-
-# kmean_silhouette_score_curve(max_k=20, step_k=20, X=clustering_sparse)
+kmean_silhouette_score_curve(max_k=20, step_k=20, X=clustering_sparse)
 # print clustering_sparse
 
-# print clustering_sparse
-km = KMeans(n_clusters=20, init='k-means++', max_iter=400, n_init=200)
-X_kmean = km.fit(clustering_sparse)
+# # print clustering_sparse
+# for y in xrange(8,21):
+# 	km = KMeans(n_clusters=y, init='k-means++', max_iter=400, n_init=200)
+# 	X_kmean = km.fit(clustering_sparse)
+# 	for i, x in enumerate(X_kmean.labels_):
+# 		print "%i,%i,%s" % (y,i+1,x)
 
-print X_kmean.labels_
+# km = KMeans(n_clusters=20, init='k-means++', max_iter=400, n_init=200)
+# X_kmean = km.fit(clustering_sparse)
 
-for i, x in enumerate(X_kmean.labels_):
-	print "%i,%s" % (i+1,x)
+# # print X_kmean.labels_
+
+# for i, x in enumerate(X_kmean.labels_):
+# 	print "%i,%s" % (i+1,x)
